@@ -26,7 +26,7 @@ function getMaxInput () {
 //if someone guesses correctly, we can update the input value for the randomNumberGenerator and recall the function to make it 10 harder
 
 guessButton.addEventListener('click', function() {
-    if (isNaN(parseInt(userInput)) == false) {
+    if (isNaN(parseInt(userInput)) == true) {
         box.innerText = "Get out of my console!";
     } else if (parseInt(userInput.value) == randomNumber) {
         box.innerText = "Your guess of " + userInput.value + " rocked! Now things will get a little harder.";
