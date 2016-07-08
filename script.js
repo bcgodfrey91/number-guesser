@@ -59,8 +59,10 @@ resetGameButton.addEventListener('click', function() {
     userInput.value = "";
     minInput.value = 1
     maxInput.value = 10
-    randomNumber = randomNumberGenerator(minInput, maxInput);
+    randomNumber = randomNumberGenerator(parseInt(minInput.value), parseInt(maxInput.value));
     resetGameButton.disabled = true;
+    clearButton.disabled = true;
+    guessButton.disabled = true;
 });
 
 
